@@ -1,0 +1,16 @@
+{
+  "name": "Foggy Farm",
+  "version": "0.1.0",
+  "description": "Filter domains",
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "js": ["custom.js"],
+      "matches": ["*://*.google.com/*"]
+    }
+  ],
+  "permissions": [
+    "activeTab"
+  ],
+  "manifest_version": 2
+}
