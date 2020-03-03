@@ -1,7 +1,7 @@
 {
   "name": "Foggy Farm",
   "version": "0.1.0",
-  "description": "Filter domains",
+  "description": "Filter content farm sites in Google search results",
   "content_scripts": [
     {
       "run_at": "document_end",
