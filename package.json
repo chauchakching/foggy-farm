@@ -5,7 +5,8 @@
   "private": true,
   "main": "dist/custom.js",
   "scripts": {
-    "prebuild": "node scripts/updateDomainList.js && mkdir -p dist && cp manifest.json dist/manifest.json",
+    "update-domains": "node scripts/updateDomainList.js",
+    "prebuild": "mkdir -p dist && cp manifest.json dist/manifest.json",
     "build": "webpack",
     "zip": "zip -r dist.zip dist",
     "build-zip": "yarn build && yarn zip"
