@@ -7,7 +7,8 @@
   "scripts": {
     "prebuild": "node scripts/updateDomainList.js && mkdir -p dist && cp manifest.json dist/manifest.json",
     "build": "webpack",
-    "zip": "zip -r dist.zip dist"
+    "zip": "zip -r dist.zip dist",
+    "build-zip": "yarn build && yarn zip"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^5.1.1",

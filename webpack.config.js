@@ -17,6 +17,5 @@ module.exports = {
     // new ZipPlugin({
     //   filename: 'dist.zip'
     // })
-  ],
-  watch: true,
+  ]
 }
